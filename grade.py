@@ -1,13 +1,21 @@
-a=int(input("Enter your grade: "))
-if a>=90:
+a=int(input("Enter English marks: "))
+b=int(input("Enter Maths marks: "))
+c=int(input("Enter Physics marks: "))
+d=int(input("Enter Chemistry marks: "))
+e=int(input("Enter Biology marks: "))
+sum=a+b+c+d+e
+print("Total Marks:",sum)
+avg=(sum)/5
+print("Average:",avg)
+if avg>=90:
     print("Grade: S")
-elif a>=80:
+elif avg>=80:
     print("Grade: A")
-elif a>=70:
+elif avg>=70:
     print("Grade: B")
-elif a>=60:
+elif avg>=60:
     print("Grade: C")
-elif a>=50:
+elif avg>=50:
     print("Grade: D")
 else:
     print("Grade: Fail")
